@@ -7,7 +7,7 @@ describe 'users api' do
 
         expect(response).to be_successful
         users = JSON.parse(response.body)
-        binding.pry
+
         expect(users.count).to eq(3)
     end
 end
