@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_secure_password
+
   has_many :nuggets
 
   validates :username, presence: true, uniqueness: true
@@ -6,5 +8,5 @@ class User < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
-  
+
 end
