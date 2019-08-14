@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :nugget do
-    title { "What ||= means" }
-    description { "Whatever preceds the || either exists OR is equal to whatever is on the right." }
-    external_link { "https://orequals.amy.com" }
+    title { Faker::Hacker.say_something_smart }
+    description { Faker::Quote.matz }
+    external_link { Faker::Internet.url }
     user_id { 1 }
   end
 end

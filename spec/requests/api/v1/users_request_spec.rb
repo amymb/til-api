@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe 'users api' do
-
   it 'sends a list of users' do
     create_list(:user, 3)
 
