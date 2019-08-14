@@ -27,7 +27,7 @@ describe 'users api' do
   end
 
   it 'creates a new user' do
-    user_params = { first_name: "Jane", last_name: "Smith", username: "janesmith77", email: "jsmith@email.com", admin: false }
+    user_params = { first_name: "Jane", last_name: "Smith", username: "janesmith77", email: "jsmith@email.com", admin: false, password: "EoC9ShWd1Vg5mSvY1UeRg7" }
 
     post "/api/v1/users", params: {user: user_params}
     user = User.last
