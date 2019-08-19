@@ -6,7 +6,7 @@ describe 'json web token encode' do
       :username => 'janet',
       :user_id => 1,
       :exp => 4
-    }, Rails.application.secrets.secret_key_base)
+    }, Rails.application.credentials.secret_key_base)
 
     fake_payload = { :username => 'janet', :user_id => 1 }
 
@@ -17,9 +17,9 @@ describe 'json web token encode' do
     token = JWT.encode({
       :username => 'janet',
       :user_id => 1
-    }, Rails.application.secrets.secret_key_base)
+    }, Rails.application.credentials.secret_key_base)
 
-    decoded_token = JWT.decode(token, Rails.application.secrets.secret_key_base)[0]
+    decoded_token = JWT.decode(token, Rails.application.credentials.secret_key_base)[0]
 
     expect(JsonWebToken.decode(token)).to eq(decoded_token)
   end
