@@ -23,6 +23,6 @@ describe 'authorize api request' do
 
         expect(command).to_not be_success
         expect(command.result).to eq(nil)
-        expect(command.errors).to eq('Missing token')
+        expect(command.errors[:token][0]).to eq('Missing token')
     end
 end
