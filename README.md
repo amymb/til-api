@@ -1,6 +1,6 @@
 **API setup**
 
-Clone down project to your local machine.
+Clone down project to your local machine. cd into the project.
 
 Install rbenv or rvm to install and manage Ruby versions. This repo uses 2.5.1
 
@@ -22,6 +22,7 @@ next, in your terminal, run:
 
 `bundle install` (if you error out here, it’s likely due to an incompatible Ruby version, see above to install RVM or rbenv to manage your Ruby version)
 
+then run:
 `rake db:create`  
 `rake db:migrate`  
 `rake db:seed`  
