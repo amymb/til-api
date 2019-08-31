@@ -1,24 +1,31 @@
-# README
+**API setup**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clone down project to your local machine.
 
-Things you may want to cover:
+Install rbenv or rvm to install and manage Ruby versions. This repo uses 2.5.1
 
-* Ruby version
+To use rbenv and install the correct version in the project directory on your local machine:
 
-* System dependencies
+Check your ruby version:
+`$ ruby -v`
 
-* Configuration
+if not the correct version, run:
+`$ rbenv install 2.5.1`
 
-* Database creation
+then:
+`$ rbenv local 2.5.1`
 
-* Database initialization
+check again and make sure the correct version is set:
+`$ ruby -v`
+----------
+In your terminal, run:
 
-* How to run the test suite
+`bundle install` (if you error out here, it’s likely due to an incompatible Ruby version, see above to install RVM or rbenv to manage your Ruby version)
 
-* Services (job queues, cache servers, search engines, etc.)
+`rake db:create`
+`rake db:migrate`
+`rake db:seed`
 
-* Deployment instructions
+`rspec` to run the test suite on the server
 
-* ...
+`rails s` to run server
