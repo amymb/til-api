@@ -22,9 +22,9 @@ next, in your terminal, run:
 
 `bundle install` (if you error out here, it’s likely due to an incompatible Ruby version, see above to install RVM or rbenv to manage your Ruby version)
 
-`rake db:create`
-`rake db:migrate`
-`rake db:seed`
+`rake db:create`  
+`rake db:migrate`  
+`rake db:seed`  
 
 `rspec` to run the API test suite
 
