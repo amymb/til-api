@@ -17,8 +17,8 @@ then:
 
 check again and make sure the correct version is set:
 `$ ruby -v`
-----------
-In your terminal, run:
+
+next, in your terminal, run:
 
 `bundle install` (if you error out here, it’s likely due to an incompatible Ruby version, see above to install RVM or rbenv to manage your Ruby version)
 
@@ -26,6 +26,6 @@ In your terminal, run:
 `rake db:migrate`
 `rake db:seed`
 
-`rspec` to run the test suite on the server
+`rspec` to run the API test suite
 
 `rails s` to run server
